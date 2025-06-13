@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulario {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(60, 72, 88, 0.10);
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.formulario h2 {
+    margin-bottom: 0.5rem;
+    color: #2d3a4a;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+label {
+    font-size: 1rem;
+    color: #3a4a5d;
+    margin-bottom: 0.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1.5px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9fafb;
+    transition: border-color 0.2s;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #e18f31;
+    outline: none;
+    background: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 200px;
+}
+
+fieldset {
+    border: 1px solid #e0e4ea;
+    border-radius: 8px;
+    padding: 0.8rem 1rem 0.7rem 1rem;
+    margin-bottom: 0.5rem;
+    background: #f7f9fc;
+}
+
+legend {
+    font-size: 1rem;
+    color: #380327;
+    font-weight: 700;
+    padding: 0 0.5rem;
+}
+
+fieldset label {
+    margin-right: 1.2rem;
+    font-weight: 400;
+    color: #a0024c;
+    font-size: 0.98rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #03eeee;
+    margin-right: 0.4em;
+}
+
+
+button[type="submit"] {
+    background: linear-gradient(90deg, #b2aeff 60%, #094550 100%);
+    color: #7f7f7f;
+    border: none;
+    border-radius: 8px;
+    padding: 0.85rem 0;
+    font-size: 1.08rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(1, 13, 246, 0.08);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background: linear-gradient(90deg, #efe003 0%, #dd0491 100%);
+    transform: translateY(-2px) scale(1.03);
+    outline: none;
+}
+
+
+@media (max-width: 400px) {
+    .formulario {
+        padding: 1.2rem 0.5rem;
+        max-width: 98vw;
+    }
+    fieldset {
+        padding: 0.7rem 0.4rem 0.6rem 0.4rem;
+    }
+}
